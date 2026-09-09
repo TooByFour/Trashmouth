@@ -1,0 +1,9 @@
+[submodule "Trashmouth/vendor/glfw"]
+	path = Trashmouth/vendor/glfw
+	url = git@github.com:glfw/glfw.git
+[submodule "Trashmouth/vendor/glm"]
+	path = Trashmouth/vendor/glm
+	url = git@github.com:icaven/glm.git
+[submodule "Trashmouth/vendor/imgui"]
+	path = Trashmouth/vendor/imgui
+	url = git@github.com:ocornut/imgui.git
