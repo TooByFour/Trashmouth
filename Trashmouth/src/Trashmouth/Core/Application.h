@@ -1,7 +1,7 @@
-#include <Trashmouth/Core/Event>
-#include <Trashmouth/Core/Layer>
+#include <Trashmouth/Core/Event.h>
+#include <Trashmouth/Core/Layer.h>
 #include <Trashmouth/tmpch.h>
-#include <vendor/glm/glm.hpp>
+#include <glm/glm.hpp>
 
 namespace TM {
 class Application {
@@ -20,7 +20,7 @@ public:
   static Application Get();
 
 private:
-  vector<std::unique_ptr<Layer>> Layerstack;
+  std::vector<std::unique_ptr<Layer>> Layerstack;
   bool m_Running = false;
 
   friend class Layer;

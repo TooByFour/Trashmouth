@@ -15,7 +15,10 @@ add_subdirectory(vendor/glad)
 find_package(OpenGL REQUIRED)
 
 add_library(trashmouth SHARED ${TRASHMOUTH_SOURCES} ${TRASHMOUTH_HEADERS})
-target_include_directories(trashmouth PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories(trashmouth PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
 target_precompile_headers(trashmouth PRIVATE src/Trashmouth/tmpch.h)
 target_link_libraries(trashmouth PRIVATE stb_image)
 target_link_libraries(trashmouth PUBLIC
