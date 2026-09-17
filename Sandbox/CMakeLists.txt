@@ -1,5 +1,12 @@
 project(Sandbox)
 
-add_executable(sandbox main.cpp)
+set(SOURCES
+    src/main.cpp
+    src/AppLayer.cpp
+    src/AppLayer.h
+)
+
+add_executable(sandbox src/main.cpp)
+target_sources(sandbox PRIVATE ${SOURCES})
 
 target_link_libraries(sandbox PRIVATE trashmouth)
