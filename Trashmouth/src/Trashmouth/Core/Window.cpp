@@ -1,8 +1,8 @@
 #include "Window.h"
-#include "GLFW/glfw3.h"
+
 #include "Trashmouth/Core/Event.h"
 #include "WindowEvents.h"
-#include <Trashmouth/Core/Shader.h>
+#include "Shader.h"
 #include <print>
 
 namespace TM {

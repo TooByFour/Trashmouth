@@ -1,11 +1,19 @@
 #pragma once
 
 #include "Event.h"
+
+// GLFW must not include a platform OpenGL header; GLAD is the OpenGL loader.
+#ifndef GLFW_INCLUDE_NONE
+#define GLFW_INCLUDE_NONE
+#endif
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <string>
 #include <functional>
 
+/**
+ * Following this tutorial: https://www.youtube.com/watch?v=rUxZ5N77M5E&list=PLlrATfBNZ98cpX2LuxLnLyLEmfD2FPpRA
+ */
 namespace TM
 {
     struct WindowSpecification

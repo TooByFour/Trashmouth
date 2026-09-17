@@ -5,6 +5,9 @@
 
 #include <glm/glm.hpp>
 
+/**
+ * Following LearnOpenGL
+ */
 namespace TM
 {
     class Shader
