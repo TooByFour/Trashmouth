@@ -6,7 +6,7 @@ set(SOURCES
     src/AppLayer.h
 )
 
-add_executable(sandbox src/main.cpp)
+add_executable(sandbox)
 target_sources(sandbox PRIVATE ${SOURCES})
-
 target_link_libraries(sandbox PRIVATE trashmouth)
+target_include_directories(sandbox PRIVATE src)

@@ -9,7 +9,7 @@ AppLayer::AppLayer()
 {
     std::println("Created AppLayer");
 
-    m_Shader = TM::Shader::CreateShader("Shaders/shader.vert.glsl", "Shaders/shader.frag.glsl");
+    m_Shader = TM::Shader::CreateShader("Sandbox/shaders/fullscreen.vert.glsl", "Sandbox/shaders/shader.frag.glsl");
 
     glCreateVertexArrays(1, &m_VertexArray);
     glCreateBuffers(1, &m_VertexBuffer);
